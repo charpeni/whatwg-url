@@ -16,7 +16,7 @@ attach_workspace: &attach_workspace
 defaults: &defaults
   working_directory: ~/whatwg-url
   docker:
-    - image: circleci/node:12
+    - image: circleci/node:10
 
 jobs:
   checkout:
