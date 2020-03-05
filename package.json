@@ -15,6 +15,9 @@
     "webidl-conversions": "^5.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-new-target": "^7.8.3",
     "browserify": "^16.5.0",
     "domexception": "^2.0.1",
     "eslint": "^6.8.0",
@@ -27,11 +30,11 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "node scripts/transform.js && node scripts/convert-idl.js",
+    "build": "node scripts/transform.js && node scripts/convert-idl.js && babel lib -d lib",
     "coverage": "jest --coverage",
     "lint": "eslint .",
-    "prepare": "node scripts/transform.js && node scripts/convert-idl.js",
-    "pretest": "node scripts/get-latest-platform-tests.js && node scripts/transform.js && node scripts/convert-idl.js",
+    "prepare": "npm run build",
+    "pretest": "node scripts/get-latest-platform-tests.js && npm run build",
     "build-live-viewer": "browserify index.js --standalone whatwgURL > live-viewer/whatwg-url.js",
     "test": "jest"
   },

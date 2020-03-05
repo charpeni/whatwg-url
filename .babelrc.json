@@ -1,0 +1,4 @@
+{
+  "retainLines": true,
+  "plugins": ["@babel/plugin-transform-new-target"]
+}
