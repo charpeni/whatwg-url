@@ -30,7 +30,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "node scripts/transform.js && node scripts/convert-idl.js && babel lib -d lib",
+    "build": "node scripts/transform.js && node scripts/convert-idl.js && babel lib/URL.js lib/URLSearchParams.js -d lib",
     "coverage": "jest --coverage",
     "lint": "eslint .",
     "prepare": "npm run build",
