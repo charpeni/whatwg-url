@@ -12,6 +12,7 @@
   "license": "MIT",
   "repository": "charpeni/whatwg-url",
   "dependencies": {
+    "buffer": "^5.4.3",
     "webidl-conversions": "^5.0.0"
   },
   "devDependencies": {

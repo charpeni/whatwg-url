@@ -1,4 +1,6 @@
 "use strict";
+const { Buffer } = require("buffer/");
+
 const { isASCIIHex } = require("./infra");
 
 function p(char) {

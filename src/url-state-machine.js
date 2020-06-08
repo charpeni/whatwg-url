@@ -1,4 +1,5 @@
 "use strict";
+const { Buffer } = require("buffer/");
 const punycode = require("punycode");
 
 const infra = require("./infra");
