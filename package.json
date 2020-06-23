@@ -13,6 +13,7 @@
   "repository": "charpeni/whatwg-url",
   "dependencies": {
     "buffer": "^5.4.3",
+    "punycode": "^2.1.1",
     "webidl-conversions": "^5.0.0"
   },
   "devDependencies": {
